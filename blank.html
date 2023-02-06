@@ -116,6 +116,37 @@
       </div>
     </section>
   </footer>
+
+  <section class="modal modal-contacts hidden">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <div class="modal-contacts__header">
+      <p class="modal-contacts__title">Напишите нам</p>
+      <button class="modal__close-button" aria-label="Закрыть"></button>
+    </div>
+    <div class="modal-contacts__main"></div>
+    <form class="modal-contacts__form" id="contact-popup">
+      <label class="modal-contacts__lable">
+        <span class="modal-contacts__lable-description">Ваше Имя:</span>
+        <input class="input modal-contacts__text-input" type="text" placeholder="Имя фамилия" />
+      </label>
+      <lable class="modal-contacts__lable">
+        <span class="modal-contacts__lable-description">Ваш e-mail:</span>
+        <input class="input modal-contacts__text-input" type="email" placeholder="email@example.com " />
+      </lable>
+      <lable class="modal-contacts__lable">
+        <span class="modal-contacts__lable-description">Текст письма:</span>
+        <textarea class="input modal-contacts__text-input modal-contacts__text-input--texarea"
+          placeholder="В свободной форме"></textarea>
+      </lable>
+      <button class="button modal-contacts__submit" type="submit">
+        Отправить
+      </button>
+    </form>
+    </div>
+  </section>
+
+  <script src="js/modal.js"></script>
+
 </body>
 
 </html>
